@@ -12,7 +12,7 @@
 	"header": {
 		"home": "Home",
 		"pricing": "Pricing",
-		"blog": "Blog",
+		"cases": "Cases",
 		"contact": "Contact",
 		"services": "Services"
 	},
@@ -31,15 +31,15 @@
 	"faq": {
 		"title": "Frequently Asked Questions"
 	},
-	"newsletter": {
-		"title": "Subscribe to our newsletter",
-		"subtitle": "Get notified for all updates",
+	"cta": {
+		"title": "Get started today",
+		"subtitle": "We are here to help you grow your business. Let's get started!",
 		"input_placeholder": "Enter your email",
 		"button_text": "Subscribe",
 		"privacy": "We care about the protection of your data. Read our",
 		"privacy_link": "Privacy Policy."
 	},
-	"blog": {
+	"cases": {
 		"prev": "Prev",
 		"next": "Next"
 	}

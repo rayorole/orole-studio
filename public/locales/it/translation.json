@@ -12,7 +12,7 @@
 	"header": {
 		"features": "Funzionalità",
 		"pricing": "Prezzi",
-		"blog": "Blog",
+		"cases": "cases",
 		"contact": "Contatti",
 		"primary_button_text": "Scarica",
 		"secondary_button_text": "Login"
@@ -30,7 +30,7 @@
 		"giscus": "Un sistema di commenti alimentato da GitHub Discussions. Lascia che i visitatori lascino commenti e reazioni sul tuo sito web tramite GitHub!",
 		"decapcms": "Gestione dei contenuti open source per il tuo flusso di lavoro Git",
 		"rss": "RSS feed generato da @astrojs/rss",
-		"articlegenerator": "Usa l'inteligenza artificiale per generare gli articoli del tuo blog"
+		"articlegenerator": "Usa l'inteligenza artificiale per generare gli articoli del tuo cases"
 	},
 	"faq": {
 		"title": "Domande frequenti"
@@ -43,7 +43,7 @@
 		"privacy": "Ci importa della tua privacy. Leggi la nostra",
 		"privacy_link": "Privacy Policy."
 	},
-	"blog": {
+	"cases": {
 		"prev": "Precedente",
 		"next": "Successiva"
 	}

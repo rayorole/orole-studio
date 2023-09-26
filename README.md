@@ -1,24 +1,20 @@
-
-
 # [Orole.studio](https://orole.studio)
 
 ## 🧪 Test
 
 On the folder run
 
-1. `npm i`  <small>(or `yarn` or `pnpm i`)</small>
-2. `npm run dev`  <small>(or `yarn dev` or `pnpm dev`)</small>
-
+1. `npm i` <small>(or `yarn` or `pnpm i`)</small>
+2. `npm run dev` <small>(or `yarn dev` or `pnpm dev`)</small>
 
 ## ✅ Features
 
-- [x] Localization (with astro-i18next)
-- [x] Light/Dark mode (provided by tailwind)
-- [x] Discussion on articles (thanks to giscus)
-- [x] Blog
-- [x] CMS for editing blog post (thanks to decap CMS)
-- [x] PWA (thanks to vite-pwa)
-
+-   [x] Localization (with astro-i18next)
+-   [x] Light/Dark mode (provided by tailwind)
+-   [x] Discussion on articles (thanks to giscus)
+-   [x] cases
+-   [x] CMS for editing cases post (thanks to decap CMS)
+-   [x] PWA (thanks to vite-pwa)
 
 ## 🧞 Dependencies
 
@@ -46,4 +42,4 @@ Astros depends on the following packages:
 
 ## Known issues
 
-- Localization is not detected automatically
+-   Localization is not detected automatically
