@@ -1,5 +1,4 @@
 ---
-import { Tick } from "@components/ui/icons";
 import Link from "@components/ui/link.astro";
 
 const { plan } = Astro.props;
@@ -17,7 +16,7 @@ const { plan } = Astro.props;
 	<Link href="#" aria-describedby="tier-enterprise" style="outline" class="block w-full mt-6">{plan.button.text || "Get Started"}</Link>
 	<ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 dark:text-gray-300 xl:mt-10">
 		{
-			plan.features.map((item) => (
+			plan.features.map((item: any) => (
 				<li class="flex gap-x-3">
 					<svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
 						<path
