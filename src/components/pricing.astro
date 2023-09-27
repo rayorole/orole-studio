@@ -1,33 +1,248 @@
 ---
-import Link from "@components/ui/link.astro";
+import Icon from "astro-icon";
+import StripeIcon from "assets/stripe-icon.png";
+import EthIcon from "assets/eth-icon.png";
+import BtcIcon from "assets/btc-icon.png";
+import PaypalIcon from "assets/paypal-icon.png";
+import { Image } from "astro:assets";
 
-const { plan } = Astro.props;
+const features = [
+	{
+		title: "Website development",
+		description: "features.webdev",
+		icon: "mdi:web",
+		url: "https://astro.build/",
+	},
+	{
+		title: "App development",
+		description: "features.appdev",
+		icon: "bi:phone-fill",
+		url: "https://astro.build/",
+	},
+	{
+		title: "Desktop development",
+		description: "features.desktopdev",
+		icon: "ph:desktop-fill",
+		url: "https://astro.build/",
+	},
+	{
+		title: "Backend development",
+		description: "features.backenddev",
+		icon: "mdi:server",
+		url: "https://astro.build/",
+	},
+	{
+		title: "Ecommerce websites",
+		description: "features.ecommerce",
+		icon: "mdi:cart",
+		url: "https://astro.build/",
+	},
+	{
+		title: "Blockchain development",
+		description: "features.blockchain",
+		icon: "mdi:bitcoin",
+		url: "https://astro.build/",
+	},
+];
 ---
 
-<div class="rounded-md p-8 xl:p-10 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700">
-	<div class="flex items-center justify-between gap-x-4">
-		<h3 id="tier-enterprise" class="text-lg font-semibold leading-8 text-gray-900 dark:text-white">{plan.name}</h3>
+<div class="space-y-16">
+	<div class="grid grid-cols-4 divide-x dark:divide-opacity-20 dark:divide-white border dark:border-opacity-20 dark:border-white rounded">
+		<div class="p-6">
+			<dt class="text-base font-semibold leading-7 text-black dark:text-white">
+				<div class="h-8 w-8 mb-2 flex-none text-black dark:text-white">
+					<Icon name="mdi:web" />
+				</div>
+				 Website development
+			</dt>
+		</div>
+
+		<div class="col-span-3 divide-y dark:divide-opacity-20 dark:divide-white">
+			<div>
+				<div class="grid grid-cols-3 divide-x dark:divide-opacity-20 dark:divide-white">
+					<div class="col-span-2 flex flex-col divide-y dark:divide-opacity-20 dark:divide-white">
+						<div class="p-6">
+							<dt class="text-base font-medium leading-4 text-black dark:text-white">Page amount</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">The amount of pages you want on your website.</p>
+						</div>
+					</div>
+					<div class="p-6 break-words">
+						<dt class="text-lg font-semibold leading-4 text-black dark:text-white">35$</dt>
+						<p class="text-sm mt-2 text-black dark:text-gray-300">Per page</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="grid grid-cols-3 divide-x dark:divide-opacity-20 dark:divide-white">
+					<div class="col-span-2 flex flex-col divide-y dark:divide-opacity-20 dark:divide-white">
+						<div class="p-6">
+							<dt class="text-base font-medium leading-4 text-black dark:text-white">Payment processing</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">
+								Integrate payment solutions into your website.<br />
+								 If you are looking for an ecommerce website, please check the <a
+									href="#ecommerce"
+									class="dark:text-white font-semibold hover:underline">
+									ecommerce
+								</a> section.
+							</p>
+
+							<div class="flex mt-4 items-center">
+								<div class="flex -space-x-1">
+									<Image src={StripeIcon} alt="Stripe" width={32} height={32} loading="eager" />
+									<Image src={PaypalIcon} alt="Paypal" width={32} height={32} loading="eager" />
+									<Image src={EthIcon} alt="Ethereum" width={32} height={32} loading="eager" />
+									<Image src={BtcIcon} alt="Bitcoin" width={32} height={32} loading="eager" />
+								</div>
+
+								<b class="text-black dark:text-gray-300 text-xs ml-2">+ A dozen more</b>
+							</div>
+						</div>
+					</div>
+					<div class="p-6 break-words">
+						<dt class="text-lg font-semibold leading-4 text-black dark:text-white">50$</dt>
+						<p class="text-sm mt-2 text-black dark:text-gray-300">Per payment solution</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="grid grid-cols-3 divide-x dark:divide-opacity-20 dark:divide-white">
+					<div class="col-span-2 flex flex-col divide-y dark:divide-opacity-20 dark:divide-white">
+						<div class="p-6 text-black dark:text-gray-300">
+							<dt class="text-base font-medium leading-4 text-black dark:text-white">Managed hosting</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">
+								Don't want to deal with hosting? We can host your website for you.
+							</p>
+						</div>
+					</div>
+					<div class="p-6 break-words space-y-6">
+						<div>
+							<dt class="text-lg font-semibold leading-4 text-black dark:text-white">50$</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">Per month for small websites</p>
+						</div>
+						<div>
+							<dt class="text-lg font-semibold leading-4 text-black dark:text-white">70$</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">Per month for medium websites</p>
+						</div>
+						<div>
+							<dt class="text-lg font-semibold leading-4 text-black dark:text-white">100$</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">Per month for large websites</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="grid grid-cols-3 divide-x dark:divide-opacity-20 dark:divide-white">
+					<div class="col-span-2 flex flex-col divide-y dark:divide-opacity-20 dark:divide-white">
+						<div class="p-6 text-black dark:text-gray-300">
+							<dt class="text-base font-medium leading-4 text-black dark:text-white">PWA support</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">
+								Progressive Web Apps are a new way to deliver amazing user experiences on the web. These are a great alternative to
+								native apps.
+							</p>
+
+							<div class="mt-4 text-sm">
+								<p>Benefits of a PWA:</p>
+
+								<ul class="list-disc list-inside">
+									<li>Offline support</li>
+									<li>Push notifications</li>
+									<li>Installable</li>
+									<li>Fast access</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="p-6 break-words">
+						<dt class="text-lg font-semibold leading-4 text-black dark:text-white">50$</dt>
+						<p class="text-sm mt-2 text-black dark:text-gray-300">One-time fee</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="grid grid-cols-3 divide-x dark:divide-opacity-20 dark:divide-white">
+					<div class="col-span-2 flex flex-col divide-y dark:divide-opacity-20 dark:divide-white">
+						<div class="p-6 text-black dark:text-gray-300">
+							<dt class="text-base font-medium leading-4 text-black dark:text-white">Content management system</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">
+								Looking for a way to manage your website content? We can integrate a CMS into your website.
+							</p>
+
+							<div class="mt-4 text-sm">
+								<p>Why use a CMS?</p>
+
+								<ul class="list-disc list-inside">
+									<li>Easy to use</li>
+									<li>Manage your content</li>
+									<li>No need to contact us to make changes to your website.</li>
+									<li>Great for blogs, news websites, and more.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="p-6 break-words">
+						<dt class="text-lg font-semibold leading-4 text-black dark:text-white">120$</dt>
+						<p class="text-sm mt-2 text-black dark:text-gray-300">One-time fee</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="grid grid-cols-3 divide-x dark:divide-opacity-20 dark:divide-white">
+					<div class="col-span-2 flex flex-col divide-y dark:divide-opacity-20 dark:divide-white">
+						<div class="p-6 text-black dark:text-gray-300">
+							<dt class="text-base font-medium leading-4 text-black dark:text-white">Analytics integration</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">
+								Want to know how your website is performing? We can integrate analytics into your website.
+							</p>
+						</div>
+					</div>
+					<div class="p-6 break-words">
+						<dt class="text-lg font-semibold leading-4 text-black dark:text-white">60$</dt>
+						<p class="text-sm mt-2 text-black dark:text-gray-300">One-time fee</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="grid grid-cols-3 divide-x dark:divide-opacity-20 dark:divide-white">
+					<div class="col-span-2 flex flex-col divide-y dark:divide-opacity-20 dark:divide-white">
+						<div class="p-6 text-black dark:text-gray-300">
+							<dt class="text-base font-medium leading-4 text-black dark:text-white">Network protection</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">
+								Protect your website from DDoS attacks and other malicious attacks with our network protection. We use <a
+									href="https://www.cloudflare.com/"
+									class="dark:text-white font-semibold hover:underline">
+									Cloudflare
+								</a> to protect your website.
+							</p>
+						</div>
+					</div>
+					<div class="p-6 break-words">
+						<dt class="text-lg font-semibold leading-4 text-black dark:text-white">60$</dt>
+						<p class="text-sm mt-2 text-black dark:text-gray-300">One-time fee</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="col-span-2 flex flex-col divide-y dark:divide-opacity-20 dark:divide-white">
+			<div class="p-6">
+				<dt class="text-base font-medium leading-4 text-black dark:text-white">Page amount</dt>
+				<p class="text-sm mt-2 text-black dark:text-gray-300">The amount of pages you want on your website.</p>
+			</div>
+			<div class="p-6">
+				<dt class="text-base font-medium leading-4 text-black dark:text-white">Page amount</dt>
+				<p class="text-sm mt-2 text-black dark:text-gray-300">The amount of pages you want on your website.</p>
+			</div>
+		</div>
+
+		<div class="flex flex-col">
+			<div class="p-6 break-words">
+				<dt class="text-lg font-semibold leading-4 text-black dark:text-white">20$</dt>
+				<p class="text-sm mt-2 text-black dark:text-gray-300">Per pagesddddddddddddddddddddddddddddddddddddddddddd</p>
+			</div>
+			<div class="p-6">
+				<dt class="text-lg font-semibold leading-4 text-black dark:text-white">20$</dt>
+				<p class="text-sm mt-2 text-black dark:text-gray-300">Per page</p>
+			</div>
+		</div> -->
 	</div>
-	<p class="mt-6 flex items-baseline gap-x-1">
-		<span class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
-			{plan.price && typeof plan.price === "object" ? plan.price.monthly : plan.price}
-		</span>
-	</p>
-	<Link href="#" aria-describedby="tier-enterprise" style="outline" class="block w-full mt-6">{plan.button.text || "Get Started"}</Link>
-	<ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 dark:text-gray-300 xl:mt-10">
-		{
-			plan.features.map((item: any) => (
-				<li class="flex gap-x-3">
-					<svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-						<path
-							fill-rule="evenodd"
-							d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-							clip-rule="evenodd"
-						/>
-					</svg>
-					{item}
-				</li>
-			))
-		}
-	</ul>
 </div>

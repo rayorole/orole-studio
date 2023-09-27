@@ -4,74 +4,173 @@ import Link from "./ui/link.astro";
 
 <!-- component -->
 <section>
-	<div class="text-white py-8">
+	<div class="py-8 relative">
+		<div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+			<svg
+				class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem] animate-slide"
+				viewBox="0 0 1155 678">
+				<path
+					fill="url(#9b2541ea-d39d-499b-bd42-aeea3e93f5ff)"
+					fill-opacity=".3"
+					d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z">
+				</path>
+				<defs>
+					<linearGradient
+						id="9b2541ea-d39d-499b-bd42-aeea3e93f5ff"
+						x1="1155.49"
+						x2="-78.208"
+						y1=".177"
+						y2="474.645"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#9089FC"></stop>
+						<stop offset="1" stop-color="#FFD580"></stop>
+					</linearGradient>
+				</defs>
+			</svg>
+		</div>
+
 		<div class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
 			<div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
-				<p class="ml-2 text-black dark:text-white uppercase tracking-loose">The process..</p>
+				<p class="ml-2 text-black dark:text-white uppercase tracking-loose">The process...</p>
 				<h2 class="text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">How we work</h2>
-				<p class="text-sm md:text-base text-gray-50 mb-4 mt-6">
+				<p class="text-sm md:text-base text-black dark:text-white my-6">
 					Communication is key. Every project has its own dashboard to track progress, see changes and communicate with the team.
 				</p>
-				<Link href="/contact">Explore now</Link>
+				<Link href="/contact">Contact Us</Link>
 			</div>
 			<div class="ml-0 md:ml-12 lg:w-2/3 sticky">
-				<div class="container mx-auto w-full h-full">
+				<div class="container mx-auto w-full h-full relative">
 					<div class="relative wrap overflow-hidden p-10 h-full">
-						<div class="border-2-2 border-yellow-555 absolute h-full border" style="right: 50%; border-radius: 1%;"></div>
-						<div class="border-2-2 border-yellow-555 absolute h-full border" style="left: 50%;  border-radius: 1%;"></div>
+						<div class="dark:border-white absolute dark:opacity-20 h-full border" style="left: 50%;  border-radius: 1%;"></div>
+						<div class="mb-8 flex justify-between items-center w-full right-timeline">
+							<div class="order-1 w-5/12"></div>
+							<div class="order-1 w-5/12 px-1 py-4 text-left">
+								<p class="mb-3 text-base text-black dark:text-white">Step I</p>
+								<h4 class="mb-3 font-bold text-lg md:text-2xl text-black dark:text-white">Project registration</h4>
+								<p class="text-sm md:text-base leading-snug text-black dark:text-white text-opacity-100">
+									Specify your project details and requirements in the registration form.
+								</p>
+							</div>
+						</div>
 						<div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
 							<div class="order-1 w-5/12"></div>
 							<div class="order-1 w-5/12 px-1 py-4 text-right">
-								<p class="mb-3 text-base text-black dark:text-white">1-6 May, 2021</p>
-								<h4 class="mb-3 font-bold text-lg md:text-2xl">Registration</h4>
-								<p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
-									Pick your favourite event(s) and register in that event by filling the form corresponding to that event. Its that
-									easy :)
+								<p class="mb-3 text-base text-black dark:text-white">Step II</p>
+								<h4 class="mb-3 font-bold text-lg md:text-2xl text-black dark:text-white">Project estimation</h4>
+								<p class="text-sm md:text-base leading-snug text-black dark:text-white text-opacity-100">
+									We will estimate your project and will send you the quotation. If you agree with the quotation, we will proceed
+									further.
 								</p>
 							</div>
 						</div>
 						<div class="mb-8 flex justify-between items-center w-full right-timeline">
 							<div class="order-1 w-5/12"></div>
 							<div class="order-1 w-5/12 px-1 py-4 text-left">
-								<p class="mb-3 text-base text-black dark:text-white">6-9 May, 2021</p>
-								<h4 class="mb-3 font-bold text-lg md:text-2xl">Participation</h4>
-								<p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
-									Participate online. The links for your registered events will be sent to you via email and whatsapp groups. Use
-									those links and show your talent.
+								<p class="mb-3 text-base text-black dark:text-white">Step III</p>
+								<h4 class="mb-3 font-bold text-lg md:text-2xl text-black dark:text-white">Project planning</h4>
+								<p class="text-sm md:text-base leading-snug text-black dark:text-white text-opacity-100">
+									We will plan your project outlining key milestones, tasks and deadlines and will send you the details of the
+									project plan. If you agree with the plan, we will proceed further.
 								</p>
 							</div>
 						</div>
 						<div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
 							<div class="order-1 w-5/12"></div>
 							<div class="order-1 w-5/12 px-1 py-4 text-right">
-								<p class="mb-3 text-base text-black dark:text-white">10 May, 2021</p>
-								<h4 class="mb-3 font-bold text-lg md:text-2xl">Result Declaration</h4>
-								<p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
-									The ultimate genius will be revealed by our judging panel on 10th May, 2021 and the resukts will be announced on
-									the whatsapp groups and will be mailed to you.
+								<p class="mb-3 text-base text-black dark:text-white">Step IV</p>
+								<h4 class="mb-3 font-bold text-lg md:text-2xl text-black dark:text-white">Design</h4>
+								<p class="text-sm md:text-base leading-snug text-black dark:text-white text-opacity-100">
+									Creating a design is a process of combining elements in a way that looks good. We will create a design for your
+									using wireframes and mockups visualizing the user interface of your website.
 								</p>
 							</div>
 						</div>
-
 						<div class="mb-8 flex justify-between items-center w-full right-timeline">
 							<div class="order-1 w-5/12"></div>
-
 							<div class="order-1 w-5/12 px-1 py-4">
-								<p class="mb-3 text-base text-black dark:text-white">12 May, 2021</p>
-								<h4 class="mb-3 font-bold text-lg md:text-2xl text-left">Prize Distribution</h4>
-								<p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
-									The winners will be contacted by our team for their addresses and the winning goodies will be sent at their
-									addresses.
+								<p class="mb-3 text-base text-black dark:text-white">Step V</p>
+								<h4 class="mb-3 font-bold text-lg md:text-2xl text-left text-black dark:text-white">Development</h4>
+								<p class="text-sm md:text-base leading-snug text-black dark:text-white text-opacity-100">
+									We will develop your project using the latest technologies and frameworks. Version control will be used to track
+									changes and manage the codebase. Regular code reviews and testing will be done to ensure the quality of the code.
+								</p>
+							</div>
+						</div>
+						<div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+							<div class="order-1 w-5/12"></div>
+							<div class="order-1 w-5/12 px-1 py-4 text-right">
+								<p class="mb-3 text-base text-black dark:text-white">Step VI</p>
+								<h4 class="mb-3 font-bold text-lg md:text-2xl text-black dark:text-white">Content integration</h4>
+								<p class="text-sm md:text-base leading-snug text-black dark:text-white text-opacity-100">
+									Integration of content provided by you into the website. SEO optimization will be done to improve the ranking of
+									your website.
+								</p>
+							</div>
+						</div>
+						<div class="mb-8 flex justify-between items-center w-full right-timeline">
+							<div class="order-1 w-5/12"></div>
+							<div class="order-1 w-5/12 px-1 py-4">
+								<p class="mb-3 text-base text-black dark:text-white">Step VII</p>
+								<h4 class="mb-3 font-bold text-lg md:text-2xl text-left text-black dark:text-white">Deployment</h4>
+								<p class="text-sm md:text-base leading-snug text-black dark:text-white text-opacity-100">
+									Your project will be deployed to a production environment (on your server or in the cloud)
+								</p>
+							</div>
+						</div>
+						<div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+							<div class="order-1 w-5/12"></div>
+							<div class="order-1 w-5/12 px-1 py-4 text-right">
+								<p class="mb-3 text-base text-black dark:text-white">Step VIII</p>
+								<h4 class="mb-3 font-bold text-lg md:text-2xl text-black dark:text-white">Post-deployment and maintenance</h4>
+								<p class="text-sm md:text-base leading-snug text-black dark:text-white text-opacity-100">
+									We will provide you with post-deployment support and maintenance services. We will also provide you with an
+									optional documentation and training on how to use your website.
+								</p>
+							</div>
+						</div>
+						<div class="mb-8 flex justify-between items-center w-full right-timeline">
+							<div class="order-1 w-5/12"></div>
+							<div class="order-1 w-5/12 px-1 py-4">
+								<p class="mb-3 text-base text-black dark:text-white">Step IX</p>
+								<h4 class="mb-3 font-bold text-lg md:text-2xl text-left text-black dark:text-white">Evaluation and feedback</h4>
+								<p class="text-sm md:text-base leading-snug text-black dark:text-white text-opacity-100">
+									You have reached the end of the project timeline. We will evaluate the project and will ask for your feedback to
+									improve our services.
 								</p>
 							</div>
 						</div>
 					</div>
-					<img
-						class="mx-auto -mt-36 md:-mt-36"
-						src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png"
-					/>
+					<!-- <Image src={OuterSpace} alt="Outer Space" class="hidden lg:block w-1/2 h-full" style="transform: translateX(50%);" /> -->
 				</div>
 			</div>
+		</div>
+
+		<div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+			<svg
+				class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem] animate-slide"
+				viewBox="0 0 1155 678">
+				<path
+					fill="url(#b9e4a85f-ccd5-4151-8e84-ab55c66e5aa1)"
+					fill-opacity=".3"
+					d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z">
+				</path>
+				<defs>
+					<linearGradient
+						id="b9e4a85f-ccd5-4151-8e84-ab55c66e5aa1"
+						x1="1155.49"
+						x2="-78.208"
+						y1=".177"
+						y2="474.645"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#9089FC">
+							<animate attributeName="stop-color" values="#9089FC; #FF80B5; #9089FC" dur="5s" repeatCount="indefinite"></animate>
+						</stop>
+						<stop offset="1" stop-color="#ffb6c1">
+							<animate attributeName="stop-color" values="#ffb6c1; #9089FC; #ffb6c1" dur="5s" repeatCount="indefinite"></animate>
+						</stop>
+					</linearGradient>
+				</defs>
+			</svg>
 		</div>
 	</div>
 </section>
