@@ -1,0 +1,16 @@
+---
+import { changeLanguage } from "i18next";
+import Container from "@components/container.astro";
+import Timeline from "@components/timeline.astro";
+import Cta from "@components/cta.astro";
+import Layout from "@layouts/Layout.astro";
+
+changeLanguage("en");
+---
+
+<Layout title="Process">
+	<Container>
+		<!-- <Cta /> -->
+		<Timeline />
+	</Container>
+</Layout>

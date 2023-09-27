@@ -49,27 +49,14 @@ const { dynamic = false } = Astro.props;
 				</div>
 			</div>
 			<div class="flex justify-center items-center mt-4 md:mt-8">
-				{
-					dynamic ? (
-						<>
-							<h2
-								class="text-2xl md:text-4xl max-w-2xl text-center font-bold tracking-tight text-black dark:text-white absolute"
-								style="line-height: 1.5">
-								{t("hero.globe_title")}
-							</h2>
-							<Cobe />
-						</>
-					) : (
-						<Image
-							class="inline-block mt-12 md:mt-20"
-							src={abstractDottedGlobeIllustration}
-							alt="Orole"
-							width={600}
-							height={600}
-							loading="eager"
-						/>
-					)
-				}
+				<Image
+					class="inline-block mt-12 md:mt-20"
+					src={abstractDottedGlobeIllustration}
+					alt="Orole"
+					width={600}
+					height={600}
+					loading="eager"
+				/>
 			</div>
 		</div>
 	</div>
