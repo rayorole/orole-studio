@@ -4,6 +4,10 @@ import StripeIcon from "assets/stripe-icon.png";
 import EthIcon from "assets/eth-icon.png";
 import BtcIcon from "assets/btc-icon.png";
 import PaypalIcon from "assets/paypal-icon.png";
+import GoogleIcon from "assets/google-icon.png";
+import TwitterIcon from "assets/twitter-icon.png";
+import AppleIcon from "assets/apple-icon.png";
+import FacebookIcon from "assets/facebook-icon.png";
 import { Image } from "astro:assets";
 
 const features = [
@@ -48,7 +52,7 @@ const features = [
 
 <div class="space-y-16">
 	<div class="grid grid-cols-4 divide-x dark:divide-opacity-20 dark:divide-white border dark:border-opacity-20 dark:border-white rounded">
-		<div class="p-6">
+		<div class="p-6 col-span-4 lg:col-span-1">
 			<dt class="text-base font-semibold leading-7 text-black dark:text-white">
 				<div class="h-8 w-8 mb-2 flex-none text-black dark:text-white">
 					<Icon name="mdi:web" />
@@ -57,7 +61,7 @@ const features = [
 			</dt>
 		</div>
 
-		<div class="col-span-3 divide-y dark:divide-opacity-20 dark:divide-white">
+		<div class="col-span-4 lg:col-span-3 divide-y dark:divide-opacity-20 dark:divide-white">
 			<div>
 				<div class="grid grid-cols-3 divide-x dark:divide-opacity-20 dark:divide-white">
 					<div class="col-span-2 flex flex-col divide-y dark:divide-opacity-20 dark:divide-white">
@@ -218,6 +222,111 @@ const features = [
 					<div class="p-6 break-words">
 						<dt class="text-lg font-semibold leading-4 text-black dark:text-white">60$</dt>
 						<p class="text-sm mt-2 text-black dark:text-gray-300">One-time fee</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="grid grid-cols-3 divide-x dark:divide-opacity-20 dark:divide-white">
+					<div class="col-span-2 flex flex-col divide-y dark:divide-opacity-20 dark:divide-white">
+						<div class="p-6 text-black dark:text-gray-300">
+							<dt class="text-base font-medium leading-4 text-black dark:text-white">Database integration</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">
+								If you need users to be able to login to your website, manage their data, or anything else that requires a database,
+								we can integrate a database into your website.
+							</p>
+						</div>
+					</div>
+					<div class="p-6 break-words space-y-6">
+						<div>
+							<dt class="text-lg font-semibold leading-4 text-black dark:text-white">50$ + 70$ /mo</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">Setup + hosting</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="grid grid-cols-3 divide-x dark:divide-opacity-20 dark:divide-white">
+					<div class="col-span-2 flex flex-col divide-y dark:divide-opacity-20 dark:divide-white">
+						<div class="p-6 text-black dark:text-gray-300">
+							<dt class="text-base font-medium leading-4 text-black dark:text-white">User authentication</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">
+								Allow users to authenticate on your website with various methods.
+							</p>
+
+							<div class="flex mt-4 items-center">
+								<div class="flex -space-x-1">
+									<Image src={GoogleIcon} alt="Google" width={32} height={32} loading="eager" />
+									<Image src={TwitterIcon} alt="Twitter" width={32} height={32} loading="eager" />
+									<Image src={AppleIcon} alt="Apple" width={32} height={32} loading="eager" />
+									<Image src={FacebookIcon} alt="Facebook" width={32} height={32} loading="eager" />
+								</div>
+
+								<b class="text-black dark:text-gray-300 text-xs ml-2">+ A dozen more</b>
+							</div>
+						</div>
+					</div>
+					<div class="p-6 break-words space-y-6">
+						<div>
+							<dt class="text-lg font-semibold leading-4 text-black dark:text-white">50$</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">One-time fee for each authentication method</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="grid grid-cols-3 divide-x dark:divide-opacity-20 dark:divide-white">
+					<div class="col-span-2 flex flex-col divide-y dark:divide-opacity-20 dark:divide-white">
+						<div class="p-6 text-black dark:text-gray-300">
+							<dt class="text-base font-medium leading-4 text-black dark:text-white">Domain name management and registration</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">
+								If you don't have a domain name, we can register one for you. If you already have one, we can manage it for you.
+							</p>
+						</div>
+					</div>
+					<div class="p-6 break-words space-y-6">
+						<div>
+							<dt class="text-lg font-semibold leading-4 text-black dark:text-white">50$</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">
+								One-time fee for domain name registration + 10$ /mo for domain name management
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="grid grid-cols-3 divide-x dark:divide-opacity-20 dark:divide-white">
+					<div class="col-span-2 flex flex-col divide-y dark:divide-opacity-20 dark:divide-white">
+						<div class="p-6 text-black dark:text-gray-300">
+							<dt class="text-base font-medium leading-4 text-black dark:text-white">Email campaigns</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">
+								In case you want to send emails to your users, we can integrate an email campaign system into your website. You can
+								setup email campaigns yourself or we can do it for you.
+							</p>
+						</div>
+					</div>
+					<div class="p-6 break-words space-y-6">
+						<div>
+							<dt class="text-lg font-semibold leading-4 text-black dark:text-white">120$</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">One-time fee</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="grid grid-cols-3 divide-x dark:divide-opacity-20 dark:divide-white">
+					<div class="col-span-2 flex flex-col divide-y dark:divide-opacity-20 dark:divide-white">
+						<div class="p-6 text-black dark:text-gray-300">
+							<dt class="text-base font-medium leading-4 text-black dark:text-white">Asset management and content upload</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">
+								Allow users to upload content to your website. This can be useful for blogs, news websites, and more.
+							</p>
+						</div>
+					</div>
+					<div class="p-6 break-words space-y-6">
+						<div>
+							<dt class="text-lg font-semibold leading-4 text-black dark:text-white">40$</dt>
+							<p class="text-sm mt-2 text-black dark:text-gray-300">One-time fee</p>
+						</div>
 					</div>
 				</div>
 			</div>
