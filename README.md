@@ -1,6 +1,6 @@
 # [Orole.studio](https://orole.studio)
 
-## 🧪 Test
+## 🧪 Tests
 
 On the folder run
 
